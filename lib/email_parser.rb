@@ -11,9 +11,11 @@ class EmailAddressParser
 
   
   def parse
-    commas_removed = @emails.gsub(/\,/)
-    parsed_emails = @emails.split(',')
-  end
+    csv_emails.split.collect do |address|
+      address.split(',') 
+    end
+    .flatten.uniq 
+  end 
   
 
   
