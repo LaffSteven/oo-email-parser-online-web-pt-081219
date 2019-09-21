@@ -9,10 +9,11 @@ class EmailAddressParser
     @emails = emails
   end
   
-  
   def parse
     parsed_emails = @emails.split(",")
-    
+    parsed_emails.map do |email_address|
+      email_address.gsub
+    end
   end
   
 end
