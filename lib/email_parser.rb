@@ -10,7 +10,7 @@ class EmailAddressParser
   end
   
   def parse
-    parsed_emails = @emails.split(",")
+    parsed_emails = @emails.split(", ")
     #parsed_emails.each do |email_address|
     #  parsed_emails[parsed_emails.find_index(email_address)] = email_address.gsub(/\s/, "")
     #end
