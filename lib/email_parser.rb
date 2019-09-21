@@ -13,7 +13,7 @@ class EmailAddressParser
   def parse
     @emails.split.map do |email_address|
       email_address.split(',') 
-    end.flatten
+    end.flatten.unique
   end
   
 
