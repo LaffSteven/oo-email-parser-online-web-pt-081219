@@ -14,7 +14,8 @@ class EmailAddressParser
   end
   
   def parse
-    parsed emails = @emails.remove_spaces.split(",")
+    email_string = @emails.remove_spaces
+    parsed_emails = email_string.split(",")
   end
   
 
