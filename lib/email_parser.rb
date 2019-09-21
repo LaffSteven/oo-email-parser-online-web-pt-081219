@@ -10,8 +10,11 @@ class EmailAddressParser
   end
   
   def parse
-    parsed_emails = @emails.split(",")
-    parsed_emails
+    parsed emails = @emails.remove_spaces.split(",")
+  end
+  
+  def remove_spaces
+    spaces_removed = @emails.gsub(/\s/, '')
   end
   
 end
