@@ -11,7 +11,8 @@ class EmailAddressParser
 
   
   def parse
-    parsed_emails = @emails.split(',', ' ')
+    commas_removed = @emails.gsub(/\,/)
+    parsed_emails = @emails.split(',')
   end
   
 
